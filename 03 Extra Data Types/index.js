@@ -6,3 +6,4 @@ obj = {
 
 console.log(typeof array);
 console.log(typeof obj);
+console.log(typeof func1);
