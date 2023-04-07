@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#quiz-header {
+  padding: 20px;
+  border: 3px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+ul li {
+  font-size: 18px;
+  margin: 15px 0;
+  display: flex;
+}
+ul li label {
+  cursor: pointer;
+  top: -4px;
+  position: relative;
+}
+.quiz {
+  display: none;
+}
+.controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.answers {
+  display: inline-block;
+  text-align: left;
+}
+
+.button {
+  background: none;
+  padding: 5px;
+  border: 2px solid black;
+  margin: 0 40px;
+  cursor: pointer;
+}
+.active-card {
+  z-index: 2;
+  display: block;
+}
+#resultScore {
+  text-align: center;
+  margin-top: 9px;
+}
+.hidden {
+  display: none;
+}
+#reload {
+  position: relative;
+  margin-top: -29px;
+  left: 56%;
+  margin-left: 125px;
+}
