@@ -1,11 +1,9 @@
 const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 async function fetchData() {
-  const data = await fetch(url, { method: "GET" });
-
-  console.log(await data.json());
-
-  console.log("Hi");
+  const response = await fetch(url, { method: "GET" });
+  const data = await response.json();
+  console.log("Hi", data);
 }
 
 fetchData();

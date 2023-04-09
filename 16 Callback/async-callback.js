@@ -1,18 +1,14 @@
-function logOutThree() {
-  setTimeout(() => {
-    console.log(3);
-  }, 500);
-}
-
-function logOutTwo() {
+function logOutTwo(callback) {
   setTimeout(() => {
     console.log(2);
+    callback();
   }, 0);
 }
 
-function logOutOne() {
+function logOutOne(callback) {
   setTimeout(() => {
     console.log(1);
+    callback();
   }, 1000);
 }
 
